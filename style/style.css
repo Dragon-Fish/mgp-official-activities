@@ -1,0 +1,151 @@
+/**
+ * Moegirl Official Activities
+ * @author 机智的小鱼君
+ * @license CC BY-NC-SA 3.0
+ */
+
+/* 
+ * @TODO 萌娘百科不允许使用 gap 属性，使用行内属性
+ */
+
+/* @FIX */
+* {
+  box-sizing: border-box;
+}
+.activity-container .mw-headline-number {
+  display: none;
+}
+
+/* Full container */
+.activity-container {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  /* #a5e4a5 */
+  background-image: linear-gradient(to bottom right, #d9fad9, #a5e4a5);
+  padding: 1rem;
+  width: 100%;
+  border: 4px solid #a5e4a5;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/* Box */
+.activity-container .activity-box {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(216, 249, 216, 0.5);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+/* Divider */
+.activity-container .activity-divider {
+  display: block;
+  width: 75%;
+  height: 4px;
+  border: none;
+  background-color: #85ca8f;
+  margin: 1rem auto;
+}
+
+/* Header */
+.activity-container h3 {
+  display: inline-block;
+  /* background-color: #85ca8f; */
+  background-image: linear-gradient(90deg, #85ca8f, #85ca8f);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em;
+  padding: 0.25em 0.2em 0 0.2em;
+  margin: 0;
+}
+
+/* Badge on left top conner */
+.activity-container .activity-badge-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.activity-container .activity-badge {
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  background-color: #a5e4a5;
+  border-radius: 0 0 0.5rem 0;
+  color: #538a61;
+}
+
+/* Title */
+.activity-container .activity-title {
+  text-align: center;
+}
+.activity-container .activity-title h2 {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  border: none;
+}
+.activity-container .activity-title .activity-subtitle {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* Content */
+.activity-container .activity-content {
+  display: flex;
+  /* gap: 1rem; */
+}
+
+/* Left */
+.activity-container .activity-image {
+  position: relative;
+  flex: 1;
+}
+.activity-container .activity-image img {
+  display: block;
+  width: 100%;
+}
+
+/* Right */
+.activity-container .activity-description {
+  flex: 2;
+}
+
+/* Details */
+.activity-container .activity-details {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 1rem;
+  /* gap: 1rem; */
+}
+.activity-container .activity-details > div {
+  flex: 1;
+  /* padding: 0 1rem; */
+}
+
+.activity-container .activity-time ul {
+  padding-left: 1rem;
+}
+
+/* Read more */
+.activity-container .activity-read-more {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+/* For mobile */
+@media screen and (max-width: 600px) {
+  .activity-container .activity-content,
+  .activity-container .activity-details {
+    flex-direction: column;
+  }
+  .activity-container .activity-image {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  .activity-container .activity-image img {
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
